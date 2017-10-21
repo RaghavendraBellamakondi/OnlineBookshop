@@ -13,6 +13,10 @@ public class UserInterface {
 		OnlineBookShop shop = new OnlineBookShop();
 		Order order1 = new Order();
 		boolean condition = true;
+		condition = supportingMethod(scanner, shop, order1, condition);
+	}
+
+	private static boolean supportingMethod(Scanner scanner, OnlineBookShop shop, Order order1, boolean condition) {
 		while (condition) {
 			System.out.println("please Enter your choice " + "\n" + "1)To view all books" + " \n"
 					+ "2)to search books by bookname " + "\n" + "3)search by auther name" + "\n" + "4)add to cart"
@@ -54,6 +58,7 @@ public class UserInterface {
 			}
 			System.out.println("\n");
 		}
+		return condition;
 	}
 
 }

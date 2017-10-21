@@ -24,7 +24,7 @@ public class CustomerBookShelf {
 	}
 
 	public void remove() {
-		System.out.println("Enter the book number as mentioned above to remove from the cart");
+		System.out.println("Enter the book number as mentioned in cart");
 		int remove = scanner.nextInt();
 		shelf.remove(remove - 1);
 	}

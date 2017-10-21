@@ -20,9 +20,13 @@ public class Order {
 		System.out.println("you have to pay " + sum + "rupees");
 		System.out.println("you want to buy books if yes plese enter 1 else 0");
 		int buy = scanner.nextInt();
-		if (buy == 1)
+		if (buy == 1) {
+			if (CustomerBookShelf.shelf.isEmpty()) {
+				System.out.println("your card is empty thank you..");
+				return;
+			}
 			buyProducts(null);
-		else
+		} else
 			System.out.println("thank you..");
 	}
 
