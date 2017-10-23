@@ -10,7 +10,7 @@ public class OnlineBookShop {
 	Scanner scanner = new Scanner(System.in);
 	CustomerBookShelf customerBookShelf = new CustomerBookShelf();
 
-	void all() {
+public	void all() {
 
 		inventory1.showAll();
 	}
